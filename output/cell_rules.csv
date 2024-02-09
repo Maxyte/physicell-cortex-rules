@@ -1,0 +1,34 @@
+apical,time,decreases,is_movable,1,0,0,4,0
+apical,time,increases,type 1 diff factor secretion,0,1,720,50,0
+apical,time,increases,type 2 diff factor secretion,0,1,2175,50,0
+apical,time,increases,type 3 diff factor secretion,0,1,3615,100,0
+apical,time,increases,type 4 diff factor secretion,0,1,5055,100,0
+pial,contact with outer,decreases,migration speed,0.08,0,0.5,4,0
+rgc,contact with apical,decreases,migration speed,1,0,0.5,20,0
+rgc,custom:time_alive,decreases,transform to ipc proto,0.2,0,30,200,0
+rgc,time,decreases,cycle entry,0.003,0,6480,100,0
+rgc,type 1 diff factor,decreases,exit from cycle phase 0,0.003,0,6480,50,0
+ipc proto,intracellular transformation inhibitor,increases,transform to rgc,0,0.1,0.001,20,0
+ipc proto,time,decreases,transformation inhibitor uptake,1,0,720,50,0
+ipc proto,time,increases,apoptosis,0,1,6480,100,0
+ipc proto,intracellular type 1 diff factor,increases,transform to ipc 1,0,1,0.001,50,0
+ipc proto,time,decreases,type 1 diff factor uptake,1,0,2160,50,0
+ipc proto,intracellular type 2 diff factor,increases,transform to ipc 2,0,1,0.001,50,0
+ipc proto,time,decreases,type 2 diff factor uptake,1,0,3600,100,0
+ipc proto,intracellular type 3 diff factor,increases,transform to ipc 3,0,1,0.001,50,0
+ipc proto,time,decreases,type 3 diff factor uptake,1,0,5040,100,0
+ipc proto,intracellular type 4 diff factor,increases,transform to ipc 4,0,1,0.001,50,0
+ipc proto,time,decreases,type 4 diff factor uptake,1,0,6480,100,0
+ipc proto,time,increases,rgc taxis factor uptake,0,1,120,50,0
+ipc proto,intracellular rgc taxis factor,increases,transform to interneuron,0,0.01,0.001,50,0
+ipc 1,intracellular arrest factor,decreases,chemotactic response to reelin,0,0,1e-06,20,0
+ipc 1,intracellular arrest factor,decreases,migration speed,2,0,1e-06,20,0
+ipc 3,intracellular arrest factor,decreases,chemotactic response to reelin,0,0,1e-06,20,0
+ipc 3,intracellular arrest factor,decreases,migration speed,2,0,1e-06,20,0
+ipc 2,intracellular arrest factor,decreases,chemotactic response to reelin,0,0,1e-06,20,0
+ipc 2,intracellular arrest factor,decreases,migration speed,2,0,1e-06,20,0
+ipc 4,intracellular arrest factor,decreases,chemotactic response to reelin,0,0,1e-06,20,0
+ipc 4,intracellular arrest factor,decreases,migration speed,2,0,1e-06,20,0
+outer,time,decreases,is_movable,1,0,0,4,0
+interneuron,intracellular arrest factor,decreases,chemotactic response to reelin,0,0,1e-06,20,0
+interneuron,intracellular arrest factor,decreases,migration speed,2,0,1e-06,20,0
