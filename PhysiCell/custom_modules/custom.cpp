@@ -194,6 +194,13 @@ void setup_tissue( void )
 			
 			pC = create_cell( *pCD ); 
 			pC->assign_position( position );
+
+			if(pC->type_name == "rgc") {
+				if( UniformRandom() > 0.5 ) {
+					pC->phenotype.motility
+				}
+			}
+
 		}
 	}
 	std::cout << std::endl; 
